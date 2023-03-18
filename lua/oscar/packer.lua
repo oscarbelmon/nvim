@@ -76,13 +76,10 @@ return require('packer').startup(function(use)
      end
  }
 
- -- Para los iconos en mensajes de error.
- -- use 'nvim-tree/nvim-web-devicons'
-
- -- use 'folke/lsp-colors.nvim'
-
+ -- Para ejecutar JUnit test desde neovim
  use 'vim-test/vim-test'
 
+ -- Línea con información de estado.
  use {
      'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
