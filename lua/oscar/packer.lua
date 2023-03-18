@@ -77,10 +77,15 @@ return require('packer').startup(function(use)
  }
 
  -- Para los iconos en mensajes de error.
- use 'nvim-tree/nvim-web-devicons'
+ -- use 'nvim-tree/nvim-web-devicons'
 
- use 'folke/lsp-colors.nvim'
+ -- use 'folke/lsp-colors.nvim'
 
  use 'vim-test/vim-test'
+
+ use {
+     'nvim-lualine/lualine.nvim',
+     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+ }
 
 end)
