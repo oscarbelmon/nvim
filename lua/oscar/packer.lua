@@ -88,4 +88,14 @@ return require('packer').startup(function(use)
  -- Latex desde neovim
  use 'lervag/vimtex'
 
+ -- Análisis de código, y herramienta de navegación.
+ use({
+    'ray-x/navigator.lua',
+    requires = {
+        { 'ray-x/guihua.lua', run = 'cd lua/fzy && make' },
+        { 'neovim/nvim-lspconfig' },
+    },
+ })
+
+
 end)
