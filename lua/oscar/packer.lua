@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
   -- Colores
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
-  vim.cmd('colorscheme rose-pine')
+  -- vim.cmd('colorscheme rose-pine')
 
   -- Resaltado de sintaxis
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -113,5 +113,10 @@ return require('packer').startup(function(use)
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
+
+  -- Esquemas de colores nightfos
+  use "EdenEast/nightfox.nvim"
+
+  -- vim.cmd('colorscheme nightfox')
 
 end)
