@@ -1,3 +1,6 @@
 vim.keymap.set("n", "<leader>nt", "<cmd>Neotree<cr>",
-  {silent = true, noremap = true}
+  {source = filesystem, 
+  silent = true, 
+  noremap = true
+  }
 )
