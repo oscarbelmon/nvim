@@ -22,3 +22,6 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+-- Para formatear al guardar un fichero.
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
