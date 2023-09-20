@@ -117,6 +117,14 @@ return require('packer').startup(function(use)
   -- Esquemas de colores nightfos
   use "EdenEast/nightfox.nvim"
 
-  -- vim.cmd('colorscheme nightfox')
+  -- better scape (para pasar al modo normal pulsado jk)
+  -- lua with packer.nvim
+  use {
+    "max397574/better-escape.nvim",
+    config = function()
+      require("better_escape").setup()
+    end,
+  }
+
 
 end)
