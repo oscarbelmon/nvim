@@ -21,6 +21,9 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+-- Para resaltar la línea en la que se está escribiendo
+vim.opt.cursorline = true
+
 vim.g.mapleader = " "
 
 -- Para formatear al guardar un fichero.
