@@ -126,5 +126,12 @@ return require('packer').startup(function(use)
     end,
   }
 
+  -- Para tener una ventana emergente en la que introducir los comandos.
+  use {
+    'VonHeikemen/fine-cmdline.nvim',
+    requires = {
+      {'MunifTanjim/nui.nvim'}
+    }
+  }
 
 end)
