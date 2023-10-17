@@ -12,3 +12,6 @@ vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
 vim.keymap.set("n", "<leader>o", 'o<Esc>0"_D')
 -- Para insertar una línea antes de la actual sin salir del modo normal.
 vim.keymap.set('n', '<leader>O', 'O<Esc>0"_D')
+
+-- Localleader, para usar con vimtex. Ej: ;ll compila el fuente
+vim.g.maplocalleader = ";"
