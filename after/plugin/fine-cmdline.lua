@@ -10,7 +10,7 @@ require('fine-cmdline').setup({
       col = '50%',
     },
     size = {
-      width = '50%',
+      width = '80%',
     },
     border = {
       style = 'rounded',
