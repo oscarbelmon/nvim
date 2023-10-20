@@ -28,3 +28,7 @@ vim.g.mapleader = " "
 
 -- Para formatear al guardar un fichero.
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
+-- Para fijar por defecto el idioma de corrección
+vim.opt.spelllang = 'es_es'
+vim.opt.spell = true
