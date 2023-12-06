@@ -138,6 +138,11 @@ return require('packer').startup(function(use)
     requires = {
       {'MunifTanjim/nui.nvim'}
     }
+
+  }
+    -- Para trabajar con marcas
+  use {
+      'chentoast/marks.nvim'
   }
 
 end)
