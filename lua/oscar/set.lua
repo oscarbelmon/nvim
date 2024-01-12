@@ -27,7 +27,9 @@ vim.opt.cursorline = true
 vim.g.mapleader = " "
 
 -- Para formatear al guardar un fichero.
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+-- Lo comento porque cambia el formato del código Java en las presentaciones 
+-- html.
+-- vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
 -- Para fijar por defecto el idioma de corrección
 vim.opt.spelllang = 'es_es'
